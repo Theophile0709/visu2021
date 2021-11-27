@@ -11,13 +11,13 @@
 	<body>
 		<!--Title-->
 		<h1>Almanach</h1>
-		<h2>test</h2>
 		<!-- Box with Map & Legend -->
-		<div id="mapbox" class="Element" > <!-- Note: "Element" classes = boxes-->
+		<div id="mapbox" class="Element" > <!-- Note: "Element" classes = boxes-->					
 			<div id="map"></div>
 			<div id="legend">
-				<h1>legend</h1>
-				
+				<h2>legend</h2>
+				<label id="year"></label>
+				<input type="range" id="timeline" min="-4000" max="2021"/>	
 			</div>
 		</div> 
 		<!-- filter box-->
@@ -45,6 +45,7 @@
 		<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.js'></script>   <!-- Mapbox library import -->
 		<script src="displayMap.js"></script><!-- script to display the map (FROM VISU TEACHER)-->
 		<!--<script src="eventCard.js"></script>-->
+		<script src="timeLine.js"></script><!-- script to display the map (FROM VISU TEACHER)-->
 
 	</body>
 </html>

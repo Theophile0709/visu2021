@@ -22,7 +22,8 @@ function getGeoJSON(points){
 						properties : { // The properties contain any other information on the point
 							country : points[i]["country"],
 								// In this case, I have specified the name but you can add any property you wish
-							deathOrder : points[i]["deathsAmountOrder"]
+							deathOrder : points[i]["deathsAmountOrder"], 
+							year : points[i]["year"]
 						}
 					}
 
@@ -62,6 +63,8 @@ const svg = d3.select(container)
 		.attr("id", "points_container");   // The id of the svg is points_container
 
 
+
+
 /// function to add layer to the map
 function addLayers(data, eventType, dotColor, checkBoxId){
 	
@@ -78,9 +81,6 @@ function addLayers(data, eventType, dotColor, checkBoxId){
 				data: events   // letiable holding the feature collection
 			})
 
-
-		
-			
 		map.addLayer({  
 			id: eventType,   // Layer id
 			type: "circle",   // Type of the visual elements representing the museums
@@ -94,10 +94,7 @@ function addLayers(data, eventType, dotColor, checkBoxId){
 				"circle-opacity": 0.6,   // Opacity (0 is transparent, 1 is opaque)
 				"circle-stroke-width": 1,   // Width of the circles border
 				"circle-stroke-color": "#004d60"   // Color of the circles border
-			}, 
-
-			
-
+			},
 		});
 		
 
@@ -105,15 +102,11 @@ function addLayers(data, eventType, dotColor, checkBoxId){
 
 		input.addEventListener('change', (e) => {
 			map.setLayoutProperty(
-			eventType,
-			'visibility',
-			e.target.checked ? 'visible' : 'none'
+				eventType,
+				'visibility',
+				e.target.checked ? 'visible' : 'none'
 			);
-			});
-
-		
-		
-			
+		});
 	});
 
 };
@@ -142,6 +135,7 @@ var minDeaths = document.getElementById("minDeaths")
 minDeaths.addEventListener("change", function(event){
 	const minDeath = parseInt(event.target.value);
 	filterDeaths = ['>=', ['number', ['get', 'deathOrder']], minDeath];
+	console.log(['get', 'deathOrder'])
 	for(const eventType of ["tsunamis", "earthquakes", "eruptions"]){
 		map.setFilter(eventType, filterDeaths)
 	}

@@ -7078,21 +7078,6 @@
         "name": "Tengger Caldera"
     },
     {
-        "id": 4468,
-        "year": -4350,
-        "volcanoLocationId": 80206,
-        "vei": 7,
-        "deathsAmountOrder": 3,
-        "damageAmountOrder": 3,
-        "housesDestroyedAmountOrder": 3,
-        "comments": "Major ash eruption and pyroclastic flow, from Japan&#39;s largest Holocene eruption, devastated S Kyushu. Fatalities likely large, but not estimated. Kyushu not resettled for 300-800 years.",
-        "country": "Japan",
-        "location": "Ryukyu Is",
-        "latitude": 30.793,
-        "longitude": 130.305,
-        "name": "Kikai"
-    },
-    {
         "id": 4487,
         "year": 1846,
         "month": 11,
@@ -7902,20 +7887,6 @@
         "latitude": -5.358,
         "longitude": 147.12,
         "name": "Long Island"
-    },
-    {
-        "id": 5230,
-        "year": -4000,
-        "volcanoLocationId": 50208,
-        "vei": 6,
-        "deathsAmountOrder": 1,
-        "damageAmountOrder": 1,
-        "comments": "The Buru caldera cuts the SW flank of Witori volcano. The gently sloping outer flanks of Witori volcano consist primarily of dacitic pyroclastic-flow and airfall deposits produced during a series of five major explosive eruptions from about 5600 to 1200 years ago, many of which may have been associated with caldera formation. Eruption occurred 4000 BC &#43;- 200 years. Eruptive caused fatalities and damage to land and property. (reference #2432)",
-        "country": "Papua New Guinea",
-        "location": "New Britain-SW Pac",
-        "latitude": -5.576,
-        "longitude": 150.516,
-        "name": "Witori"
     },
     {
         "id": 4643,
