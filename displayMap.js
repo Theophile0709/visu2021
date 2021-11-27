@@ -128,7 +128,7 @@ function displayMap(){
 	});
 
 }
-displayMap()
+
 
 var minDeaths = document.getElementById("minDeaths")
 
@@ -140,4 +140,14 @@ minDeaths.addEventListener("change", function(event){
 		map.setFilter(eventType, filterDeaths)
 	}
 });
+
+displayMap()
+function filterBy(year) {
+	const filterYears = ['<=', ['number', ['get', 'year']], year];
+	
+	for(const eventType of ["tsunamis", "earthquakes", "eruptions"]){
+		map.setFilter(eventType, filterYears)
+		// Set the label to the year
+	document.getElementById('year').textContent = year;
+	}}
 

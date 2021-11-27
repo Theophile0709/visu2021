@@ -4,7 +4,8 @@
 		<meta charset="utf-8">
 		<title>Almanach</title>   <!-- Set the title of the page here -->
 		<link rel='stylesheet' href='Almanach.css'> <!-- Link to stylesheet-->
-		<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.css' rel='stylesheet'></link>   <!-- Import of the styles from Mapbox -->
+		<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.css' rel='stylesheet' ></link>   <!-- Import of the styles from Mapbox -->
+		<link rel="stylesheet" href="style.css"></link>
 
 	</head>
 
@@ -15,9 +16,9 @@
 		<div id="mapbox" class="Element" > <!-- Note: "Element" classes = boxes-->					
 			<div id="map"></div>
 			<div id="legend">
-				<h2>legend</h2>
+				<h2>Legend</h2>
 				<label id="year"></label>
-				<input type="range" id="timeline" min="-4000" max="2021"/>	
+				<input type="range" id="timeline" min="-4000" max="2021" class="slider"/>	
 			</div>
 		</div> 
 		<!-- filter box-->
